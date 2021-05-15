@@ -1,4 +1,4 @@
-# hrmsBackendProject
+# HRMS Backend Project
 Human Resource Management System Project
 
 # Database Diagram
