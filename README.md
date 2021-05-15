@@ -7,6 +7,7 @@
     - [Database Diagram](#database-diagram)
 </details>
 <hr>
+
 ## First Commit
 <ul>
 <li><a>Database created.</a></li>
