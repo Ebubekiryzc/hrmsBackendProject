@@ -2,7 +2,7 @@
 > Human Resource Management System Project.
 
 <details>
-<summary><strong>Details</strong></summary>
+<strong>Context</strong>
   
 -   [First Commit](#first-commit)
     - [Database Diagram](#database-diagram)   
