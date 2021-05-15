@@ -3,7 +3,7 @@
 
 ## First Commit
 <ul>
-<li><a>Database created.</a></li>
+<li><a style="color:red;">Database created.</a></li>
 <li><a>Spring project created.</a></li>
 <li><a>Customized according to <b>Multi Layered Architecture.</b></a></li>
 <li><a>First API created for Job Entity.</a></li>
