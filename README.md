@@ -1,6 +1,5 @@
 # HRMS Backend Project
 > Human Resource Management System Project.
-<hr>
 
 # First Commit
 <ul>
