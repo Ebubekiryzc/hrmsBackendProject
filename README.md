@@ -4,9 +4,11 @@
 ## Table of Contents
 
 <details>
+<a>Click Here</a>
     
 -   [First Commit](#first-commit)
     - [Database Diagram](#database-diagram)
+
 <details>
 <hr>
 
