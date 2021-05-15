@@ -5,7 +5,7 @@
 <summary><strong>Details</strong></summary>
   
 -   [First Commit](#first-commit)
-  - [Database Diagram](#database-diagram)   
+    - [Database Diagram](#database-diagram)   
 </details>
 
 ## First Commit
