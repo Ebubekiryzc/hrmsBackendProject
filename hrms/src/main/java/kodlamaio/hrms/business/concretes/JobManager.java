@@ -20,6 +20,7 @@ public class JobManager implements JobService {
 		this.jobDao = jobDao;
 	}
 
+//	all jobs returning from database.
 	@Override
 	public List<Job> getAll() {
 		return this.jobDao.findAll();
