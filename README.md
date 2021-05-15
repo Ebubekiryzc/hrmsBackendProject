@@ -3,9 +3,11 @@
 
 ## Table of Contents
 
+<details>
+    
 -   [First Commit](#first-commit)
     - [Database Diagram](#database-diagram)
-
+<details>
 <hr>
 
 ## First Commit
