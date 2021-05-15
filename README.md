@@ -4,7 +4,7 @@
 ## Table of Contents
 
 <details>
-<summary>Click Here</summary>
+    <summary><b>Click Here</b></summary>
     
 -   [First Commit](#first-commit)
     - [Database Diagram](#database-diagram)
