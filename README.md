@@ -1,6 +1,9 @@
 # HRMS Backend Project
 > Human Resource Management System Project.
-- [First Commit](##First Commit)
+<details>
+<summary><strong>Details</strong></summary>
+-   [First Commit](first-commit)
+</details>
 
 ## First Commit
 <ul>
