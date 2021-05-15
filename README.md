@@ -9,7 +9,7 @@
 -   [First Commit](#first-commit)
     - [Database Diagram](#database-diagram)
 
-<details>
+</details>
 <hr>
 
 ## First Commit
