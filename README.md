@@ -1,11 +1,11 @@
 # HRMS Backend Project
 > Human Resource Management System Project.
-<details>
-<summary><strong>Context</strong></summary>
-  
+
+# Table of Contents
+
 -   [First Commit](#first-commit)
     - [Database Diagram](#database-diagram)
-</details>
+
 <hr>
 
 ## First Commit
