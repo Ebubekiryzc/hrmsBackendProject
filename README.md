@@ -10,6 +10,8 @@
     - [Database Diagram v1](#database-diagram-v1)
 -   [Second Commit](#second-commit)
     - [Database Diagram v2](#database-diagram-v2)
+-   [Third Commit](#third-commit)
+    - [Database Diagram v3](#database-diagram-v3)
     
 </details>
 <hr>
@@ -37,3 +39,15 @@
 
 ### Database Diagram v2
 ![databasediagram2](https://raw.githubusercontent.com/Ebubekiryzc/GithubImages/master/HRMS/Readme/HRMS%20Database%20Diagram%20v0.2.png)
+
+## Third Commit
+<ul>
+<li><a>Database has some changes.</a></li>
+<li><a>Job Advertisements added to the system.</a></li>
+<li><a>Some entities (JobAdvertisements, City and Salary) added.</a></li>
+<li><a>Some entities has some refactorings and new associations(Employers and Job).</a></li>
+<li><a>API' s created for JobAdvertisement entity.</a></li>
+</ul>
+
+### Database Diagram v3
+![databasediagram3](https://raw.githubusercontent.com/Ebubekiryzc/GithubImages/master/HRMS/Readme/HRMS%20Database%20Diagram%20v.0.3.png)
