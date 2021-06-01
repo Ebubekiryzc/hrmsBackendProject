@@ -17,10 +17,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 //TODO: Eposta doğrulaması, e posta verifikasyonu için sınıfları yaz.  
 @Data
-@Entity
-@Table(name = "users")
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "users")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User{
 	@Id

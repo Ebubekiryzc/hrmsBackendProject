@@ -30,7 +30,12 @@ public class JobManager implements JobService {
 	public DataResult<List<Job>> getAll() {
 		return new SuccessDataResult<List<Job>>(this.jobDao.findAll(), "All job positions listed.");
 	}
-	
+
+	@Override
+	public DataResult<Job> getByName(String jobName) {
+		return new SuccessDataResult<Job>(this.jobDao.getByName(jobName), "Operation Success.");
+	}
+
 	@Override
 	public Result add(Job job) {
 		var error = BussinessRules.check(isNameExist(job.getName()));
@@ -39,11 +44,6 @@ public class JobManager implements JobService {
 		}
 		this.jobDao.save(job);
 		return new SuccessDataResult<Job>(job, "Position added!");
-	}
-	
-	@Override
-	public DataResult<Job> getByName(String jobName) {
-		return new SuccessDataResult<Job>(this.jobDao.getByName(jobName),"Operation Success.");
 	}
 
 	private Result isNameExist(String name) {

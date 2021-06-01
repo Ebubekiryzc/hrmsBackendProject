@@ -45,23 +45,23 @@ public class JobSeekerManager implements JobSeekerService {
 
 	@Override
 	public DataResult<JobSeeker> getByEmail(String email) {
-		return new SuccessDataResult<JobSeeker>(this.jobSeekerDao.findByEmail(email),"Operation success.");
+		return new SuccessDataResult<JobSeeker>(this.jobSeekerDao.getByEmail(email),"Operation success.");
 	}
 
 	@Override
 	public DataResult<JobSeeker> getByNationalId(String nationalId) {
-		return new SuccessDataResult<JobSeeker>(this.jobSeekerDao.findByNationalId(nationalId),"Operation success.");
+		return new SuccessDataResult<JobSeeker>(this.jobSeekerDao.getByNationalId(nationalId),"Operation success.");
 	}
 	
 	//abc@xyz.com
 	//abc@xyz.com
 	
 	private Result isEmailExist(String email) {
-		return isExistControl(this.jobSeekerDao.findByEmail(email.trim()),"There is already a registered user with this email!");
+		return isExistControl(this.jobSeekerDao.getByEmail(email.trim()),"There is already a registered user with this email!");
 	}
 	
 	private Result isNationalIdExist(String nationalId) {
-		return isExistControl(this.jobSeekerDao.findByNationalId(nationalId.trim()),"There is already a registered user with this national id!");
+		return isExistControl(this.jobSeekerDao.getByNationalId(nationalId.trim()),"There is already a registered user with this national id!");
 	}
 	
 	private Result isExistControl(JobSeeker jobSeeker, String errorMessage) {

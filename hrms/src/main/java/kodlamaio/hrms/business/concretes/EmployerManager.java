@@ -63,7 +63,7 @@ public class EmployerManager implements EmployerService {
 	}
 	
 	private Result isEmailExist(String email) {
-		return isExistControl(this.employerDao.findByEmail(email.trim()),"There is already a registered user with this email!");
+		return isExistControl(this.employerDao.getByEmail(email.trim()),"There is already a registered user with this email!");
 	}
 
 	private Result isExistControl(Employer employer, String errorMessage) {
