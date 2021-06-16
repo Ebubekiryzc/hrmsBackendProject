@@ -1,10 +1,11 @@
 package kodlamaio.hrms.api.controllers;
 
-import java.util.List;
+//import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.JobSeekerService;
-import kodlamaio.hrms.core.utilities.results.DataResult;
-import kodlamaio.hrms.core.utilities.results.Result;
+//import kodlamaio.hrms.core.utilities.results.DataResult;
+//import kodlamaio.hrms.core.utilities.results.Result;
 import kodlamaio.hrms.entities.concretes.JobSeeker;
 
 @RestController
@@ -30,23 +31,23 @@ public class JobSeekersController {
 	}
 
 	@GetMapping("/getAll")
-	public DataResult<List<JobSeeker>> getAll() {
-		return this.jobSeekerService.getAll();
+	public ResponseEntity<?> getAll() {
+		return ResponseEntity.ok(this.jobSeekerService.getAll());
 	}
 
 	@GetMapping("/getByEmail")
-	public DataResult<JobSeeker> getByEmail(@RequestParam String email) {
-		return this.jobSeekerService.getByEmail(email);
+	public ResponseEntity<?> getByEmail(@RequestParam String email) {
+		return ResponseEntity.ok(this.jobSeekerService.getByEmail(email));
 	}
 
 	@GetMapping("/getByNationalId")
-	public DataResult<JobSeeker> getByNationalId(@RequestParam String nationalId) {
-		return this.jobSeekerService.getByNationalId(nationalId);
+	public ResponseEntity<?> getByNationalId(@RequestParam String nationalId) {
+		return ResponseEntity.ok(this.jobSeekerService.getByNationalId(nationalId));
 	}
 
 	@PostMapping("/add")
-	public Result add(@Valid @RequestBody JobSeeker jobSeeker) {
-		return this.jobSeekerService.add(jobSeeker);
+	public ResponseEntity<?> add(@Valid @RequestBody JobSeeker jobSeeker) {
+		return ResponseEntity.ok(this.jobSeekerService.add(jobSeeker));
 	}
 
 }
