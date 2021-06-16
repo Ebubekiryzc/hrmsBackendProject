@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
 import lombok.AllArgsConstructor;
@@ -34,14 +35,17 @@ public class JobAdvertisement {
 
 	@ManyToOne()
 	@JoinColumn(name = "job_id", referencedColumnName = "id")
+	@NotNull(message = "Which job will be attended? Please select one.")
 	private Job job;
 
 	@ManyToOne()
 	@JoinColumn(name = "employer_id", referencedColumnName = "user_id")
+	@NotNull(message = "Which employer will be attended? Please select one.")
 	private Employer employer;
 
 	@ManyToOne()
 	@JoinColumn(name = "city_id", referencedColumnName = "id")
+	@NotNull(message = "Which city will be attended? Please select one.")
 	private City city;
 
 	@OneToOne(mappedBy = "advertisement", cascade = CascadeType.ALL)

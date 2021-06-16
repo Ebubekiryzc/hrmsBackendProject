@@ -5,5 +5,4 @@ import kodlamaio.hrms.entities.concretes.JobSeeker;
 
 public interface UserCheckService {
 	Result checkJobSeeker(JobSeeker jobSeeker);
-	
 }
