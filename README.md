@@ -12,6 +12,8 @@
     - [Database Diagram v2](#database-diagram-v2)
 -   [Third Commit](#third-commit)
     - [Database Diagram v3](#database-diagram-v3)
+-   [Fourth Commit](#fourth-commit)
+    - [Database Diagram v4](#database-diagram-v4)    
     
 </details>
 <hr>
@@ -51,3 +53,16 @@
 
 ### Database Diagram v3
 ![databasediagram3](https://raw.githubusercontent.com/Ebubekiryzc/GithubImages/master/HRMS/Readme/HRMS%20Database%20Diagram%20v.0.3.png)
+
+## Fourth Commit
+<ul>
+<li><a>Database has some changes.</a></li>
+<li><a>Resume system added to the main system.</a></li>
+<li><a>Cloudinary system added to the main system.</a></li>
+<li><a>Some new entitites added.</a></li>
+<li><a>Some entities has some refactorings and new associations.</a></li>
+<li><a>API' s created for resume system components entity.</a></li>
+</ul>
+
+### Database Diagram v4
+![databasediagram4](https://raw.githubusercontent.com/Ebubekiryzc/GithubImages/master/HRMS/Readme/HRMS%20Database%20Diagram%20v.0.4.png)
