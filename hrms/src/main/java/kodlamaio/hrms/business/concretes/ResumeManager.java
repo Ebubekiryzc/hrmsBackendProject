@@ -31,6 +31,11 @@ public class ResumeManager implements ResumeService {
 	}
 
 	@Override
+	public DataResult<List<Resume>> getByJobSeekerId(int id) {
+		return new SuccessDataResult<List<Resume>>(this.resumeDao.getByJobSeekerId(id),"All resume records listed associated to job seeker.");
+	}
+
+	@Override
 	public Result add(Resume resume) {
 		this.checkAndSetFields(resume);
 		this.resumeDao.save(resume);
@@ -65,7 +70,7 @@ public class ResumeManager implements ResumeService {
 			checker.setResume(resume);
 		}
 	}
-	
+
 	private void setExperiencesIfExist(Resume resume) {
 		if (resume.getExperiences().isEmpty()) {
 			return;
@@ -74,7 +79,7 @@ public class ResumeManager implements ResumeService {
 			checker.setResume(resume);
 		}
 	}
-	
+
 	private void checkAndSetFields(Resume resume) {
 		this.setCoverLettersIfExist(resume);
 		this.setEducationInfosIfExist(resume);
@@ -84,16 +89,16 @@ public class ResumeManager implements ResumeService {
 		this.setPicturesIfExist(resume);
 		this.setSocialAccountsIfExist(resume);
 	}
-	
+
 	private void setKnownLanguagesIfExist(Resume resume) {
 		if (resume.getKnownLanguages().isEmpty()) {
 			return;
 		}
 		for (var checker : resume.getKnownLanguages()) {
 			checker.setResume(resume);
-		}			
+		}
 	}
-	
+
 	private void setKnownSkillsIfExist(Resume resume) {
 		if (resume.getKnownSkills().isEmpty()) {
 			return;
@@ -102,7 +107,7 @@ public class ResumeManager implements ResumeService {
 			checker.setResume(resume);
 		}
 	}
-	
+
 	private void setSocialAccountsIfExist(Resume resume) {
 		if (resume.getSocialAccounts().isEmpty()) {
 			return;
@@ -111,7 +116,7 @@ public class ResumeManager implements ResumeService {
 			checker.setResume(resume);
 		}
 	}
-	
+
 	private void setCoverLettersIfExist(Resume resume) {
 		if (resume.getCoverLetters().isEmpty()) {
 			return;
@@ -130,5 +135,4 @@ public class ResumeManager implements ResumeService {
 		}
 	}
 
-	
 }
