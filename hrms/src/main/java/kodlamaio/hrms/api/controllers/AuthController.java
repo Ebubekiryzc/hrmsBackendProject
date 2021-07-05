@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.AuthService;
+import kodlamaio.hrms.core.entities.User;
 //import kodlamaio.hrms.core.utilities.results.Result;
 import kodlamaio.hrms.entities.concretes.Employer;
 import kodlamaio.hrms.entities.concretes.JobSeeker;
@@ -31,6 +32,11 @@ public class AuthController {
 	@PostMapping("/registerJobSeeker")
 	public ResponseEntity<?> registerJobSeekers(@RequestBody JobSeeker jobSeeker) {
 		return ResponseEntity.ok(authService.jobSeekerRegister(jobSeeker));
+	}
+	
+	@PostMapping("/logIn")
+	public ResponseEntity<?> logIn(@RequestBody User user){
+		return ResponseEntity.ok(authService.logIn(user));
 	}
 
 }
